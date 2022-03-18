@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+	<PackAsTool>true</PackAsTool>
+	<ToolCommandName>asit</ToolCommandName>
+	<Nullable>enable</Nullable>
+	<PackageOutputPath>./nupkg</PackageOutputPath>
+	<PackageId>AsitCli</PackageId>
+	<Authors>sitahmetemin</Authors>
+	<Description>Package that allows you to build your ".net" project in a layered way.</Description>
+	<Copyright>@sitahmetemin</Copyright>
+	<PackageTags>layer, create, project</PackageTags>
+	<NeutralLanguage>tr-TR</NeutralLanguage>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Program.cs~RFd85f4fc.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Sharprompt" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="nupkg\" />
+    <Folder Include="src\Helpers\" />
+  </ItemGroup>
+
+</Project>
